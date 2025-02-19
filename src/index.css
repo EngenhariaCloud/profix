@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --instagram-blue: #0095f6;
+  --instagram-border: #dbdbdb;
+  --primary-green: #10B981;
+  --dark-gray: #111827;
+  --light-gray: #F3F4F6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--dark-gray);
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('/hero-bg.jpg') center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
+.shadow-hover:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.feed {
+  max-width: 614px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.post {
+  border: 1px solid var(--instagram-border);
+  border-radius: 3px;
+  margin-bottom: 24px;
+  background: white;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 14px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-image img {
+  width: 100%;
+  height: auto;
+}
+
+.post-actions {
+  display: flex;
+  padding: 8px 16px;
+  gap: 16px;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.save-button {
+  margin-left: auto;
+}
+
+.post-info {
+  padding: 0 16px;
+}
+
+.comments {
+  padding: 16px;
+  border-top: 1px solid var(--instagram-border);
+}
+
+.comment {
+  margin-bottom: 8px;
+} 
